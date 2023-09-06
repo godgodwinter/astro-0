@@ -5,9 +5,18 @@ import Minji1 from '../../assets/img/nj/minji/minji-1.jpg'
 import Minji2 from '../../assets/img/nj/minji/minji-2.jpg'
 import Minji3 from '../../assets/img/nj/minji/minji-3.jpg'
 import BabengCard from '../../components/babeng/BabengCard.astro';
+
+
 ---
+<script>
+  function handleClick () {
+    console.log("button clicked!");
+  }
+  document.getElementById("button").addEventListener("click", handleClick);
+</script>
 <LayoutBabeng title="Welcome to Astro.">
 <div >
+  <button id="button">Click Me</button>
   Ini Transisi pages
   <div>
     <h1 class="text-3xl font-bold underline ">
@@ -15,7 +24,7 @@ import BabengCard from '../../components/babeng/BabengCard.astro';
     </h1>
   </div>
   <div class="grid grid-cols-3 px-10">
-    <BabengCard  link={'/transition/post'}/>
+    <BabengCard  link={'/transition/post'} />
     <div class="card w-96 bg-base-100 shadow-xl">
       <figure>
         <Image src={Minji2} alt="minji-2"/></figure>

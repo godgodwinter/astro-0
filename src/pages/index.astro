@@ -1,9 +1,9 @@
 ---
-import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import LayoutBabeng from '../layouts/LayoutBabeng.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<LayoutBabeng title="Welcome to Astro.">
 	<main >
 		<svg
 			class="astro-a"
@@ -40,18 +40,19 @@ import Card from '../components/Card.astro';
 		</p>
 		<ul role="list" class="link-card-grid">
 			<Card
+				href="about"
+				title="Belajar Basic Astro"
+				body="Belajar dari dokumentasi"
+			/>
+			<Card
 				href="transition"
 				title="Belajar Transisi Astro"
 				body="Belajar dari dokumentasi"
 			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
+			
 		</ul>
 	</main>
-</Layout>
+</LayoutBabeng>
 
 <style>
 	main {
@@ -59,7 +60,7 @@ import Card from '../components/Card.astro';
 		padding: 1rem;
 		width: 800px;
 		max-width: calc(100% - 2rem);
-		color: white;
+		color: red;
 		font-size: 20px;
 		line-height: 1.6;
 	}

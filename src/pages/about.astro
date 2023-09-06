@@ -1,8 +1,11 @@
 ---
 import RBasicIndex from '../components/react/RBasicIndex.jsx'
+import LayoutBabeng from '../layouts/LayoutBabeng.astro';
 ---
+<LayoutBabeng title="Welcome to Astro.">
 <div>
     <RBasicIndex client:only="react"/>
     <hr>
     Ini About
 </div>
+</LayoutBabeng>
