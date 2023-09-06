@@ -20,6 +20,14 @@
 			"dest": "index.astro"
 		},
 		{
+			"src": "^\\/transition\\/?$",
+			"dest": "transition.astro"
+		},
+		{
+			"src": "^\\/transition\\/post\\/?$",
+			"dest": "post.astro"
+		},
+		{
 			"src": "^\\/about\\/detail\\/?$",
 			"dest": "detail.astro"
 		},
